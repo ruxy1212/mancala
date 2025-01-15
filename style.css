@@ -1,0 +1,126 @@
+body{
+  background: rgb(19, 168, 195);
+  padding: 16px;
+}
+
+h1{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  color: rgb(255, 166, 0);
+  text-shadow: 2px 2px black;
+}
+
+main{
+  width: 80%;
+  max-width: 400px;
+  background: rgb(241, 233, 233);
+  padding: 64px 16px;
+  border-radius: 16px;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+main > div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+main > div:nth-child(3){
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+}
+
+main > div:nth-child(2){
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 16px 8px;
+  & input {
+    position: relative;
+    left: -50%;
+  }
+}
+
+main > div:nth-child(4){
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 16px 8px;
+  & input {
+    position: relative;
+    left: -50%;
+  }
+}
+
+main input.hole{
+  font-family:'Courier New', Courier, monospace;
+  max-width: 50px;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+main input.pot {
+  font-family:'Courier New', Courier, monospace;
+  max-width: 100px;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor:pointer;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px 8px;
+}
+
+.submit{
+  background: rgb(22,188,22);
+  color: white;
+}
+
+.restart{
+  background: rgb(215, 133, 26);
+  color: white;
+}
+
+.submit:hover{
+  background: rgb(10, 91, 10);
+}
+
+.restart:hover{
+  background: rgb(137, 94, 38)
+}
+
+.render {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 8px;
+}
+
+.render button {
+  background: rgb(109, 146, 240);
+  color: white;
+}
+
+.render button:hover {
+  background-color: rgb(74, 100, 164);
+}
+
+.render button.active {
+  border: 2px solid rgb(204, 125, 35);
+  background-color: rgb(74, 100, 164);;
+}
