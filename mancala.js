@@ -110,7 +110,7 @@ const restart = () => {
     selectedValue.value = "";
   }
   safe = [], memory = [];
-  render.innerHTML = '';
+  document.querySelector('.render').innerHTML = '';
 }
 
 const render = (btn, index) => {
